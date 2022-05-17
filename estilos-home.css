@@ -1,0 +1,52 @@
+
+.titulo {
+    background-color: aqua;
+}
+
+.barra{
+    background-color: #15115b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    gap: 26px;     
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #a393c0;
+}
+
+.tarjeta1 {
+    width: 60px;
+    height: auto;
+}
+
+.debito{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.credito{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    text-justify: center;
+    list-style: none;
+    gap: 26px;    
+}
