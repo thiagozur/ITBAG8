@@ -1,20 +1,48 @@
 
+body {
+    background: linear-gradient(to left, rgb(2, 6, 29), rgb(152, 166, 196) );
+}
+
+.encabezado {
+    background-color: #3952c423;
+}
+
 .titulo {
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0);
     border-radius: 5px;
 }
 
-.barra{
-    background-color: #15115b;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    list-style: none;
-    gap: 26px;     
+.logo{
+    width: 250px;
+    height: auto;
 }
+
+.fondo-t {
+    background-color: rgba(130, 174, 194, 0.247);
+}
+
+.barra{
+    background-color: #110e4d50;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    border-radius: 5px;
+    /* display: flex;
+    justify-content: left; */
+    /* align-items: center; */
+    /* list-style: none; */
+    /* gap: 26px;      */
+}
+
+
+.blanco{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: tahoma;
+    /* display: flex; */
+     /* text-justify: center; */
+     /* text-align: center; */
+    /* padding-left: 80px;   */
+} 
 
 header nav ul li a {
     text-decoration: none;
@@ -25,6 +53,11 @@ header nav ul li a {
     width: 45px;
     height: auto;
 }
+
+.arriba{
+    padding-top: 50px;
+}
+
 
 .debito{
     display: flex;
@@ -39,15 +72,13 @@ header nav ul li a {
     align-items: center;
     list-style: none;
 }
- .pie{
-    position: fixed;
-    left: 0;
+ 
+.fixed-row-bottom { 
+    position: fixed; 
     bottom: 0;
-    width: 100%;
-    text-align: center;
- }
+}
 
- .nolink{
+.nolink{
      text-decoration: none;
      color: #212529;
- }
+}
