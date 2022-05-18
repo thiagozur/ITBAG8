@@ -1,0 +1,10 @@
+body{
+    /* background-image: url(./imagenes/Fondo.png);
+    
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(103, 29, 172);
+    background: linear-gradient(to right, rgb(25, 6, 43), rgb(145, 113, 175) ) ;
+}
