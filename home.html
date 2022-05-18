@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITBANK Homebanking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos-home.css">
 </head>
 <header>
@@ -19,30 +20,48 @@
  </nav>
 </header>
 <body>
-    <div>
+<!--     <div>
         <h3 class="titulo">Caja de ahorro en pesos</h3>
         <h3 id="plata">$100.000,00</h3>
-    </div>
-    <div>
+    </div> -->
+    <div class="card w-80">
+        <div class="card-body">
+          <h4 class="card-title titulo">Caja de ahorro en pesos</h4>
+          <h5>100.000,00</h5>
+        </div>
+<!--     <div>
         <h3 class="titulo">
             Tarjetas
         </h3>
         <ul class="debito">
-            <li><img class="tarjeta1" src="imagenes/kisspng-computer-icons-debit-card-clip-art-credit-card-debit-card-icon-png-vector-clipart-psd-peoplep-5cf4e6ec739980.9924702715595537724735.jpg" alt=""></li>
+            <li><img class="tarjeta1" src="imagenes/tarjeta.jpg" alt=""></li>
             <li>Tarjeta de débito</li>
         </ul>
         <ul class="credito">
-            <img class="tarjeta1" src="imagenes/kisspng-computer-icons-debit-card-clip-art-credit-card-debit-card-icon-png-vector-clipart-psd-peoplep-5cf4e6ec739980.9924702715595537724735.jpg" alt="">
+            <img class="tarjeta1" src="imagenes/tarjeta.jpg" alt="">
             <li>Tarjeta de crédito</li>
         </ul>
-    </div>
+    </div> -->
+    <div class="card w-80">
+        <div class="card-body">
+          <h4 class="card-title titulo">Tarjetas</h4>
+          <a class="nolink" href="www.google.com"><p class="card-text"><img class="tarjeta1" src="imagenes/tarjeta.jpg" alt="">Tarjeta de débito</p></a>
+          <a class="nolink" href="www.google.com"><p class="card-text"><img class="tarjeta1" src="imagenes/tarjeta.jpg" alt="">Tarjeta de crédito</p></a>
+        </div>
+        
+      </div>
+      
 </body>
 <footer>
-    <ul>
-        <li>Cerrar Sesión</li>
-        <li>Ayuda</li>
-        <li>Atención al Cliente</li>
-        <li>Tel.: 0800-3526</li>
-    </ul>
+    <div class="pie">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">Cerrar Sesión</div>
+                <div class="col-3">Ayuda</div>
+                <div class="col-3">Atención al Cliente</div>
+                <div class="col-3">Tel.: 0800-3526</div>
+            </div>
+        </div>
+    </div>
 </footer>
 </html>

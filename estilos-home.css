@@ -1,6 +1,7 @@
 
 .titulo {
     background-color: aqua;
+    border-radius: 5px;
 }
 
 .barra{
@@ -21,7 +22,7 @@ header nav ul li a {
 }
 
 .tarjeta1 {
-    width: 60px;
+    width: 45px;
     height: auto;
 }
 
@@ -38,15 +39,15 @@ header nav ul li a {
     align-items: center;
     list-style: none;
 }
-
-footer ul {
+ .pie{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    display: flex;
-    text-justify: center;
-    list-style: none;
-    gap: 26px;    
-}
+ }
+
+ .nolink{
+     text-decoration: none;
+     color: #212529;
+ }
