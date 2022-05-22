@@ -52,5 +52,28 @@ header nav ul li a {
     color: white;
 }
 
+.toppad{
+    padding-top: 20px;
+}
 
+.btmpad{
+    padding-bottom: 20px;
+}
 
+.textobase{
+    text-decoration: none;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.sel:hover{
+    background-color: rgb(66, 170, 189);
+    border-radius: 5px;
+}
+
+.currentsel{
+    background-color: rgb(73, 136, 165);
+    border-radius: 5px;
+}

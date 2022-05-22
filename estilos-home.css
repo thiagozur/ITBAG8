@@ -1,5 +1,5 @@
 
-body {
+body{
     background: linear-gradient(to left, rgb(2, 6, 29), rgb(152, 166, 196) );
 }
 
@@ -81,4 +81,30 @@ header nav ul li a {
 .nolink{
      text-decoration: none;
      color: #212529;
+}
+
+.toppad{
+    padding-top: 20px;
+}
+
+.btmpad{
+    padding-bottom: 20px;
+}
+
+.textobase{
+    text-decoration: none;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.sel:hover{
+    background-color: rgb(66, 170, 189);
+    border-radius: 5px;
+}
+
+.currentsel{
+    background-color: rgb(73, 136, 165);
+    border-radius: 5px;
 }
