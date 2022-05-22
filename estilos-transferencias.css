@@ -1,38 +1,56 @@
-.titulo {
-    background-color: aqua;
-    border-radius: 5px;
+
+body {
+    background: linear-gradient(to left, rgb(2, 6, 29), rgb(152, 166, 196) );
+}
+
+.logo{
+    width: 250px;
+    height: auto;
 }
 
 .barra{
-    background-color: #15115b;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: #110e4d50;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
     border-radius: 5px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    list-style: none;
-    gap: 26px;     
+    /* display: flex;
+    justify-content: left; */
+    /* align-items: center; */
+    /* list-style: none; */
+    /* gap: 26px;      */
 }
+/* .formulario .titulo{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: tahoma;
+
+} */
+.blanco{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: tahoma;
+    /* display: flex; */
+     /* text-justify: center; */
+     /* text-align: center; */
+    /* padding-left: 80px;   */
+} 
 
 header nav ul li a {
     text-decoration: none;
     color: #a393c0;
 }
 
- .pie{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
- }
-
- .nolink{
+.nolink{
      text-decoration: none;
      color: #212529;
- }
- a {
-     float: left;
- }
+}
+
+.formulario{
+    padding-top: 30px;
+}
+.formulario .legal{
+    color: white;
+}
+
+
 

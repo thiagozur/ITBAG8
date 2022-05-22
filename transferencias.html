@@ -5,81 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITBANK Homebanking</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos-transferencias.css">
 </head>
-<header>
- <h1>ITBANK</h1>
- <nav>
-     <ul class="barra">
-        <li class="barra2"><a href="https:www.google.com">Transferencias</a></li>
-        <li class="barra2"><a href="https:www.google.com">Inversiones</a></li>
-        <li class="barra2"><a href="https:www.google.com">Pago de Servicios</a></li>
-        <li class="barra2"><a href="https:www.google.com">Mi CBU/Alias</a></li>
-     </ul>
- </nav>
-</header>
 <body>
-
-  <div class="card w-80">
-    <div class="card-body">
-      <h4 class="card-title titulo">Transferencia</h4>
-    </div>
-    <form>
-      <div class="row mb-3">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Cuenta a debitar</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">CBU/CVU del destinatario</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">CUIT/CUIL/CDI</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Titular de la cuenta</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" >
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Importe*</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Motivo*</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div>
-        <button type="submit" class="btn btn-primary">Transferir</button>
-      </div> 
-      <a href="http://google.com"> Ver legales </a>   
-    </form>
-  </div>
-</body>
-
-<footer>
-    <div class="pie">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">Cerrar Sesión</div>
-                <div class="col-3">Ayuda</div>
-                <div class="col-3">Atención al Cliente</div>
-                <div class="col-3">Tel.: 0800-3526</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <img src="./imagenes/Logo transparente.png" class="logo" alt="Logo">
+            </div>
+            <div class="col-3">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Cuentas</a></li>
+                    <li><a class="dropdown-item" href="#">Resúmenes</a></li>
+                    <li><a class="dropdown-item" href="#">Turnos</a></li>
+                    <li><a class="dropdown-item" href="#">Seguros</a></li>
+                    <li><a class="dropdown-item" href="#">Preferencias</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+    <div class="container barra">
+      <div class="row">
+          <a class="col-12 col-sm-3 justify-content-center" href="./transferencias.html"><div class="blanco">Transferencias</div> </a>
+          <a class="col-12 col-sm-3 justify-content-center" href="www.google.com"><div class="blanco">Inversiones</div> </a>
+          <a class="col-12 col-sm-3 justify-content-center" href="www.google.com"><div class="blanco">Pago de servicios</div> </a>
+          <a class="col-12 col-sm-3 justify-content-center" href="www.google.com"><div class="blanco">Mi CBU/Alias</div> </a>
+      </div> 
+    </div>
+
+<!-- FORMULARIO DE TRANSFERENCIAS -->
+<!--    <container class="formulario"> -->
+    <div class="container formulario">
+      <form>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">Cuenta a debitar</label>
+          <div class="col-sm-9">
+              <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">CBU/CVU del destinatario</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">CUIT/CUIL/CDI</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">Titular de la cuenta</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">Importe*</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-sm-3 col-form-label blanco">Motivo*</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control">
+          </div>
+        <div class="row mb-3">   
+          </div>
+          <div class="d-grid gap-2"> <!-- si le asigno class"buttom"//se pone chiquito -->
+            <button class="btn btn-secondary" type="submit">Transferir</button>
+          </div> 
+        </div> 
+        <div>
+          <div class="row mb-3" >
+            <a href="http://google.com" class="legal"> Ver legales </a>  
+          </div> 
+        </div>  
+      </form>
+    </div>
+   <!-- </container> -->
+</body>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-12 col-sm-3 d-flex justify-content-center blanco">Cerrar Sesión</div> -->
+            <div class="col-12 col-sm-4 d-flex justify-content-center blanco">Ayuda</div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center blanco">Atención al Cliente</div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center blanco">Tel.: 0800-3526</div>
+        </div>
+    </div>
+  </footer>
 </html>
