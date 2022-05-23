@@ -46,10 +46,6 @@ body:before{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: tahoma;
-    /* display: flex; */
-     /* text-justify: center; */
-     /* text-align: center; */
-    /* padding-left: 80px;   */
 } 
 
 header nav ul li a {
@@ -121,4 +117,18 @@ footer a {
 footer a:hover {
     background-color: rgba(30, 28, 75, 0.6);
     color: #3d99be;
+}
+
+.sel:hover{
+    background-color: rgba(102, 95, 248, 0.6);
+    border-radius: 5px;
+}
+
+.currentsel{
+    background-color: rgba(37, 34, 94, 0.6);
+    border-radius: 5px;
+}
+
+.subrayado{
+    text-decoration: none;
 }
