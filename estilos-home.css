@@ -15,7 +15,7 @@ body:before{
     content: "";
     width: 100%;
     min-height: 100vh;
-    position: absolute;
+    position: fixed;
     background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     opacity: 0.7;
     z-index: -1;

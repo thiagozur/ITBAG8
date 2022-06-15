@@ -21,3 +21,5 @@ function traerDatos() {
         bolsa[2].innerHTML = `Variación: ${res[4].casa.variacion}%`
     })
 }
+
+traerDatos()
