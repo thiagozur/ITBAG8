@@ -57,57 +57,58 @@
         <div class="row">
             <div class="card fondo-t col-12 col-lg-3 m-1">
                 <div class="card-body ">
-                    <h5 class="card-title ">Dólar Oficial</h5>
+                    <h5 class="card-title">Dólar Oficial</h5>
                 </div>
                 <div class="card-body row text-center">
-                    <p class="col-6">Compra</p>
-                    <p class="col-6">Venta</p>
+                    <p class="col-6" id="compra-ofic">Compra</p>
+                    <p class="col-6" id="venta-ofic">Venta</p>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Variación</p>
+                    <p class="card-text" id="var-ofic">Variación</p>
                     <p class="card-text">Actualizado</p>
                 </div>
+                <button type="button" onclick="traerDatos()" class="btn btn-primary">prueba</button>
               </div>
             
             <div class="card fondo-t col-12 col-lg-3 m-1">
-                <div class="card-body ">
-                    <h5 class="card-title ">Dólar Blue</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Dólar Blue</h5>
                 </div>
                 <div class="card-body row text-center">
-                    <p class="col-6">Compra</p>
-                    <p class="col-6">Venta</p>
+                    <p class="col-6" id="compra-b">Compra</p>
+                    <p class="col-6" id="venta-b">Venta</p>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Variación</p>
+                    <p class="card-text" id="var-b">Variación</p>
                     <p class="card-text">Actualizado</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="card fondo-t col-12 col-lg-3 m-1">
-                <div class="card-body ">
-                    <h5 class="card-title ">Contado con liqui</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Contado con liqui</h5>
                 </div>
                 <div class="card-body row text-center">
-                    <p class="col-6">Compra</p>
-                    <p class="col-6">Venta</p>
+                    <p class="col-6" id="compra-l">Compra</p>
+                    <p class="col-6" id="venta-l">Venta</p>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Variación</p>
+                    <p class="card-text" id="var-l">Variación</p>
                     <p class="card-text">Actualizado</p>
                 </div>
             </div>
 
             <div class="card fondo-t col-12 col-lg-3 m-1">
-                <div class="card-body ">
-                    <h5 class="card-title ">Dólar Bolsa</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Dólar Bolsa</h5>
                 </div>
                 <div class="card-body row text-center">
-                    <p class="col-6">Compra</p>
-                    <p class="col-6">Venta</p>
+                    <p class="col-6" id="compra-bol">Compra</p>
+                    <p class="col-6" id="venta-bol">Venta</p>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Variación</p>
+                    <p class="card-text" id="var-bol">Variación</p>
                     <p class="card-text">Actualizado</p>
                 </div>
             </div>
@@ -135,4 +136,5 @@
     </ul>
     <small class="d-none d-sm-block">ITBANK - Copyright 2022. Todos los derechos reservados.</small>
 </footer>
+<script src="./cotizaciones.js"></script>
 </html>
