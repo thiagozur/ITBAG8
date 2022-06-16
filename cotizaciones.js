@@ -33,7 +33,7 @@ function pesoDolar() {
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
         console.log(valor, dolarUsado.value)
-        result.innerText = `Resultado: ${(parseFloat(plata.value) * valor).toFixed(2)}`
+        result.innerText = `Resultado: U$D${(parseFloat(plata.value) * valor).toFixed(2)}`
         console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) * valor}`)
         plata.value = ""
         phPlata.placeholder = "Ingrese una cantidad"
@@ -46,7 +46,7 @@ function dolarPeso() {
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
         console.log(valor, dolarUsado.value)
-        result.innerText = `Resultado: ${(parseFloat(plata.value) / valor).toFixed(2)}`
+        result.innerText = `Resultado: $${(parseFloat(plata.value) / valor).toFixed(2)}`
         console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) / valor}`)
         plata.value = ""
         phPlata.placeholder = "Ingrese una cantidad"
