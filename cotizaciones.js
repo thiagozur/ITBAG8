@@ -6,7 +6,7 @@ const dolarUsado = document.getElementById("dolar-usado")
 const calculoRealizado = document.getElementById("calculo")
 const plata = document.getElementById("plata")
 const result = document.getElementById("result")
-/* const permitidos = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "ArrowRight", "ArrowLeft"] */
+const permitidos = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "ArrowRight", "ArrowLeft"]
 
 function traerDatos() {
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
@@ -27,9 +27,13 @@ function traerDatos() {
     })
 }
 
-/* plata.addEventListener("keydown", e => {
-    console.log(e.key)
-}) */
+plata.addEventListener("keydown", e => {
+    if (permitidos.includes(e.key)) {
+
+    } else {
+        
+    }
+})
 
 function pesoDolar() {
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
