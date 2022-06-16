@@ -4,9 +4,9 @@ const liqui = [document.getElementById("compra-l"), document.getElementById("ven
 const bolsa = [document.getElementById("compra-bol"), document.getElementById("venta-bol"), document.getElementById("var-bol")]
 const dolarUsado = document.getElementById("dolar-usado")
 const calculoRealizado = document.getElementById("calculo")
-const phPlata = document.getElementsByName("plata")[0]
 const plata = document.getElementById("plata")
 const result = document.getElementById("result")
+/* const permitidos = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "ArrowRight", "ArrowLeft"] */
 
 function traerDatos() {
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
@@ -27,16 +27,21 @@ function traerDatos() {
     })
 }
 
+/* plata.addEventListener("keydown", e => {
+    console.log(e.key)
+}) */
+
 function pesoDolar() {
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
     .then(res => res.json())
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
         console.log(valor, dolarUsado.value)
-        result.innerText = `Resultado: U$D${(parseFloat(plata.value) * valor).toFixed(2)}`
+        result.innerText = `Resultado: U$D${(parseFloat(plata.value) / valor).toFixed(2)}`
         console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) * valor}`)
         plata.value = ""
-        phPlata.placeholder = "Ingrese una cantidad"
+        plata.placeholder = "Ingrese una cantidad"
+        console.log("pesoDolar")
     })
 }
 
@@ -46,10 +51,11 @@ function dolarPeso() {
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
         console.log(valor, dolarUsado.value)
-        result.innerText = `Resultado: $${(parseFloat(plata.value) / valor).toFixed(2)}`
+        result.innerText = `Resultado: $${(parseFloat(plata.value) * valor).toFixed(2)}`
         console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) / valor}`)
         plata.value = ""
-        phPlata.placeholder = "Ingrese una cantidad"
+        plata.placeholder = "Ingrese una cantidad"
+        console.log("dolarPeso")
     })
 }
 
@@ -65,13 +71,13 @@ function checkData() {
 
 function calculo() {
     const numero = checkData()
-    if (calculoRealizado.value == 1 && numero) {
-        pesoDolar()
-    } else if (calculoRealizado.value == 0 && numero) {
+    if (parseInt(calculoRealizado.value) === 0 && numero) {
         dolarPeso()
+    } else if (parseInt(calculoRealizado.value) === 1 && numero) {
+        pesoDolar()
     } else {
         plata.value = ""
-        phPlata.placeholder = "Por favor, ingrese una cantidad adecuada"
+        plata.placeholder = "Por favor, ingrese una cantidad adecuada"
         result.innerText = "Resultado:"
     }
     

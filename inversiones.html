@@ -86,20 +86,20 @@
                 <div class="card-body">
                     <h5 class="card-title">Calculadora de conversiones</h4>
                     <div>
-                        <select name="" id="dolar-usado" class="form-select bg-white text-dark">
+                        <select id="dolar-usado" class="form-select bg-white text-dark">
                             <option value="0">Dólar Oficial</option>
                             <option value="1">Dólar Blue</option>
                             <option value="3">Contado con liqui</option>
                             <option value="4">Dólar Bolsa</option>
                         </select>   
-                        <select name="" id="calculo" class="form-select bg-white text-dark mt-2">
+                        <select id="calculo" class="form-select bg-white text-dark mt-2">
                             <option value="0">Dólar a peso</option>
                             <option value="1">Peso a dólar
 </option>
                         </select>
                     </div>
                     <label for="plata">Cantidad a convertir:</label>
-                    <input type= "number" name="plata" placeholder="Ingrese una cantidad" id="plata" class="form-control" required>
+                    <input type= "number" placeholder="Ingrese una cantidad" id="plata" class="form-control" value="">
                     <p id="result">Resultado:</p>
                     <button type="button" class="btn btn-primary" onclick="calculo()">Calcular</button>
                     
