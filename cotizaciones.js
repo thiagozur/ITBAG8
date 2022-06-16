@@ -65,9 +65,9 @@ function checkData() {
 
 function calculo() {
     const numero = checkData()
-    if (calculoRealizado.value == 0 && numero) {
+    if (calculoRealizado.value == 1 && numero) {
         pesoDolar()
-    } else if (calculoRealizado.value == 1 && numero) {
+    } else if (calculoRealizado.value == 0 && numero) {
         dolarPeso()
     } else {
         plata.value = ""
