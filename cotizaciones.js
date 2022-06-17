@@ -30,10 +30,8 @@ function traerDatos() {
 plata.addEventListener("keydown", e => {
     if (permitidos.includes(e.key)) {
         plata.disabled = false
-        console.log("bien")
     } else {
         plata.disabled = true
-        console.log("mal " + e.key)
         setTimeout(() => plata.disabled = false, 50)
     }
 })
@@ -43,12 +41,9 @@ function pesoDolar() {
     .then(res => res.json())
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
-        console.log(valor, dolarUsado.value)
         result.innerText = `Resultado: U$D${(parseFloat(plata.value) / valor).toFixed(2)}`
-        console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) * valor}`)
         plata.value = ""
         plata.placeholder = "Ingrese una cantidad"
-        console.log("pesoDolar")
     })
 }
 
@@ -57,12 +52,9 @@ function dolarPeso() {
     .then(res => res.json())
     .then(res => {
         const valor = parseFloat(res[dolarUsado.value].casa.venta.replace(/,/g, "."))
-        console.log(valor, dolarUsado.value)
         result.innerText = `Resultado: $${(parseFloat(plata.value) * valor).toFixed(2)}`
-        console.log(`${plata.value}, ${result.innerText}, ${res[dolarUsado.value].casa.venta}, ${parseFloat(plata.value) / valor}`)
         plata.value = ""
         plata.placeholder = "Ingrese una cantidad"
-        console.log("dolarPeso")
     })
 }
 
