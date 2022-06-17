@@ -40,16 +40,14 @@
                         <a class="btn btn-primary" href="./home.html" role="button">Ingresa</a>
                     </div>
                     <div class="col-8">
-                        <label for="inputPassword2" class="visually-hidden">Contraseña</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Contraseña">
+                        <label for="pass" class="visually-hidden">Contraseña</label>
+                        <input type="password" class="form-control" id="pass" placeholder="Contraseña">
                     </div>
                     <div class="col-4">
-                        <button type="submit" class="btn  btn-secondary mb-3"> 
-                            Mostrar
-                        </button> 
+                        <button type="button" onclick="mostrarToggle()" class="btn btn-secondary mb-3">Mostrar</button> 
                     </div>
                     <div class="row">
-                        <span><strong> ¿No tenés cuenta? </strong> <a href="./empty.html">Registrate </a></span>
+                        <span><strong> ¿No tenés cuenta? </strong> <a href="./empty.html">Registrate</a></span>
                     </div>
                     <div class="row">
                         <span><a href="./empty.html"> Recuperar contraseña </a></span>
@@ -57,7 +55,7 @@
             </div>
         </div>    
     </div>
-    <footer class="mb-3 d-none d-md-block">
+    <footer class="mb-3 d-none d-sm-block">
         <ul class="redes m-2 p-2">
             <li class="p-3"><a href="./empty.html" target="_blank">
                 <i class="fab fa-whatsapp me-2"></i>
@@ -92,7 +90,8 @@
                     Productos
                 </a></li>
         </ul>
-        <small class="d-none d-sm-block">ITBANK - Copyright 2022. Todos los derechos reservados.</small>
+        <small>ITBANK - Copyright 2022. Todos los derechos reservados.</small>
     </footer>
+    <script src="./visibilidadContrasena.js"></script>
 </body>
 </html>
