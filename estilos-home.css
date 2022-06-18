@@ -84,6 +84,22 @@ header nav ul li a {
     bottom: 0;
 }
 
+/* Estilos de las cartas en la pestaña inversiones */
+.fondo-t {
+    background-color: rgba(62, 58, 150, 0.6);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.192);
+}
+
+/* Inputs de la barra de calculadora */
+.input1 {
+    border: 1px solid rgba(7, 7, 7, 0.753);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.192);
+    text-decoration: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
 .nolink{
      text-decoration: none;
      color: #212529;
